@@ -1,35 +1,35 @@
-/*GLOBAL CSS*/
+/*GENERAL*/
 
-html {
-  width: 1445px;
-  height: 1885px;
-  font-family: "Raleway", sans-serif;
-  margin: 6px;
-  padding: 6px;
-  box-sizing: border-box;
+header,
+main {
+  font-family: Raleway, sans-serif, "Times New Roman", Times, serif;
+  width: 1300px;
+  height: auto;
+  margin: auto;
+}
+
+footer {
+  font-family: Raleway, sans-serif, "Times New Roman", Times, serif;
 }
 
 h1 {
   font-size: 20px;
-  font-weight: bold;
 }
 
 h2 {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 16px;
 }
 
-h4 {
-  font-size: 13px;
-  font-weight: bold;
+h3 {
+  font-size: 14px;
 }
 
 /*HEADDER*/
 
 nav {
-  min-height: 2px;
   display: flex;
   justify-content: space-between;
+  margin: 0px;
 }
 
 nav ul {
@@ -38,44 +38,356 @@ nav ul {
   width: 30%;
 }
 
-nav li {
+nav a {
+  text-decoration: none;
+}
+
+nav a:hover {
   color: #0065fc;
+  font-weight: bold;
+}
+nav li {
   list-style: none;
 }
 
-nav a {
-  text-decoration: none;
-  color: #0065fc;
+nav figure {
+  margin: 0px;
 }
 
 /*MAIN*/
 
-.searchbar {
+.barretxt {
+  line-height: 15px;
+}
+
+.barretxt form {
+  height: 40px;
+  width: 30%;
+  border-radius: 14px;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 27%;
-  border: 1px #f2f2f2 solid;
-  border-radius: 19px;
 }
 
-.searchbar i {
-  background-color: red;
-}
-
-.searchbar p {
-}
-
-.rechercher {
-  background-color: transparent
-  height: 100%;
-}
-
-
-.Hébergementcase {
+form i {
   background-color: #f2f2f2;
-  width: 865px;
-  height: 623px;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 14px;
+}
+
+form input {
+  height: 40px;
+  width: 50%;
+  margin-left: 0px;
+  padding-left: 10px;
+  border: none;
+}
+
+::placeholder {
+  font-weight: bold;
+  color: black;
+}
+
+form button {
+  height: 40px;
+  width: 30%;
+  border: none;
+  background-color: #0065fc;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+/*FILTRES ET BOUTONS*/
+
+.filtre_bouton {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.pantclic :hover {
+  background-color: #0065fc;
+  color: white;
+}
+
+.search_filter {
+  height: 40px;
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  position: relative;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 30px;
+  background-color: white;
+  padding-left: 60px;
+  padding-right: 20px;
+}
+.search_filter > .rechercheicon {
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: #deebff;
+  border-radius: 20px;
+  color: #0065fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topic {
+  font-weight: bold;
+}
+
+.infologe {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.infologe i {
+  color: #0065fc;
+  background-color: white;
+  border: 1px solid #f2f2f2;
+  border-radius: 6px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.infotxt {
+  margin-left: 10px;
+  margin-top: 4px;
+  font-size: 13px;
+}
+
+/*HÉBERGEMENTS A MARSEILLE*/
+
+.starblue {
+  color: #0065fc;
+  font-size: 11px;
+}
+
+.stargray {
+  color: silver;
+  font-size: 11px;
+}
+
+.herbergementmarseille h2 {
+  margin-left: 40px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.herbergementmarseille {
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  width: 900px;
+  height: 625px;
+}
+
+.annonceheberge {
+  border: 3px solid white;
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px silver;
+  width: 236px;
+  margin-bottom: 40px;
+  background-color: white;
+}
+
+.annonceheberge img {
+  width: 236px;
+  height: 120px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.infoheberge {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  line-height: 5px;
+}
+
+.infoheberge p {
+  font-size: 12px;
+}
+
+.topicheberge {
+  margin-left: 40px;
+  margin-right: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.afficherplus {
+  margin-left: 40px;
+  margin-top: 4px;
+}
+
+.afficherplus a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+a:visited {
+  color: black;
+}
+
+/*lES PLUS POPULAIRES*/
+
+.blok2 {
+  display: flex;
+  justify-content: space-between;
+  width: 1300px;
+}
+
+.blok2 a {
+  text-decoration: none;
+}
+
+.pluspop {
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  width: 360px;
+}
+
+.pluspop h2 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 28px;
+  margin-right: 28px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.annoncepopu {
+  border: 3px solid white;
+  border-radius: 15px;
+  box-shadow: 0px 1px 2px gray;
+  width: 300px;
+  height: 140px;
+  margin-bottom: 40px;
+  margin-left: 28px;
+  background-color: white;
+  display: flex;
+}
+
+.annoncepopu img {
+  width: 140px;
+  height: 140px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.contenupops {
+  width: 180px;
+  padding-left: 10px;
+  padding-right: 15px;
+}
+
+/*ACTIVITÉES A MARSEILLE*/
+
+.blok3 {
+  margin-top: 50px;
+}
+
+.blok3 a {
+  text-decoration: none;
+}
+
+.actblocat1 {
+  border-radius: 15px;
+  width: 300px;
+  height: 500px;
+}
+
+.actblocat2 {
+  border-radius: 15px;
+  width: 300px;
+  height: 230px;
+}
+
+.actblocat1,
+.actblocat2 {
+  box-shadow: 0px 5px 10px silver;
+}
+
+.imageactmar {
+  width: 300px;
+  height: 450px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.imageactmar2 {
+  width: 300px;
+  height: 180px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.essaie1 {
+  border: 1px black solid;
+}
+
+.actmarsbloc {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 500px;
+  flex-wrap: wrap;
+}
+
+.actmarsbloc img {
+  object-fit: cover;
+}
+.actmarseille p {
+  font-size: 13px;
+  font-weight: bold;
 }
 
 /*FOOTER*/
+
+footer {
+  background-color: #f2f2f2;
+  margin-top: 50px;
+}
+
+.footcont {
+  width: 1300px;
+
+  margin: auto;
+  display: flex;
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+footer li {
+  line-height: 25px;
+  font-size: 14px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.footblock {
+  text-align: left;
+  width: 30%;
+  padding-top: 10px;
+}

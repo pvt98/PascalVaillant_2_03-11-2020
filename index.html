@@ -7,6 +7,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/c98fa57321.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
@@ -15,15 +16,20 @@
 <!--logo-->
         <header>
             <nav>
-                <figure>
+                
+                <div class="inscrirebis">
                     <img src="picture/Reservia.svg" alt="Logo reservia">
-                </figure>
+                    <p><a href="#">S'inscrire</a></p>
+
+                </div>
 
 <!--menu-->
                 <ul>
-                    <li><a href="#hebergements_ancre">Hébergements</a></li>
-                    <li><a href="#activités_ancre">Activités</a></li>
-                    <li><a href="#">S'inscrire</a></li>
+                    <li class="nav1"><a href="#hebergements_ancre">Hébergements</a></li>
+                    <li class="nav2"><a href="#activités_ancre">Activités</a></li>
+                    <div class="inscrirebase">
+                    <li class="nav3"><a href="#">S'inscrire</a></li>
+                    </div>
                 </ul>
             </nav>
 
@@ -37,9 +43,11 @@
                 <p>En plein centre ville ou en pleine nature</p>
 
             <form method="post" action="traitement.php">
+                <div class="iconsb">
                 <i class="fas fa-map-marker-alt"></i>  
+                </div>
                     <input type="search" name="Ville,Pays"  id="VillePays" maxlength="40" placeholder="Marseille, France"/>
-                         <button class="rechercher" type="button">Rechercher</button>
+                         <button class="rechercher" type="button"><div class="rechercherbut">Rechercher</div><i class="fas fa-search srchicon"></i></button>
 
             </form>
 
@@ -58,27 +66,27 @@
                         </div>
                             <div class="topic">Économique</div>
                     </button>
-                </div>
+                
             
-                <div class="pantclic">
+                
                     <button class="search_filter" type="button">
                         <div class="rechercheicon">
                             <i class="fas fa-child"></i>
                         </div>
                             <div class="topic">Familial</div>
                     </button>
-                </div>
+               
 
-                <div class="pantclic">
+             
                     <button class="search_filter" type="button">
                         <div class="rechercheicon">
                             <i class="fas fa-heart"></i>
                         </div>
                             <div class="topic">Romantique</div>
                     </button>
-                </div>
+             
 
-                <div class="pantclic">
+                
                     <button class="search_filter" type="button">
                         <div class="rechercheicon">
                             <i class="fas fa-dog"></i>

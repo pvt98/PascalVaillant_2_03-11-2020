@@ -24,6 +24,10 @@ h3 {
   font-size: 14px;
 }
 
+a {
+  color: black;
+}
+
 /*HEADER*/
 
 nav {
@@ -40,6 +44,7 @@ nav ul {
 
 nav a {
   text-decoration: none;
+  color: black;
 }
 
 nav a:hover {

@@ -67,10 +67,6 @@ nav img {
 
 /*MAIN*/
 
-.srchicon {
-  display: none;
-}
-
 .barretxt {
   line-height: 15px;
 }
@@ -106,7 +102,7 @@ form input {
   color: black;
 }
 
-form button {
+form .button {
   height: 40px;
   width: 40%;
   border: none;
@@ -118,13 +114,30 @@ form button {
   border-bottom-right-radius: 14px;
 }
 
+.rechercher {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.rechercherlogo {
+  display: none;
+}
+
 /*FILTRES ET BOUTONS*/
 
 .filtre_bouton {
   display: flex;
   margin-top: 20px;
   margin-bottom: 20px;
+
   font-size: 15px;
+}
+
+.pantclic {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .pantclic :hover {
@@ -134,7 +147,7 @@ form button {
 
 .search_filter {
   height: 40px;
-  border: 1px solid lightgray;
+  border: 1px solid silver;
   border-radius: 20px;
   position: relative;
   text-align: center;
@@ -144,7 +157,7 @@ form button {
   padding-left: 60px;
   padding-right: 20px;
 }
-.search_filter > .rechercheicon {
+.search_filter > .iconetop {
   position: absolute;
   left: 0px;
   top: 50%;
@@ -161,6 +174,10 @@ form button {
 
 .topic {
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
 }
 
 .infologe {
@@ -535,10 +552,21 @@ footer a {
     width: 60%;
   }
 
-  .barretxt button {
+  .barretxt .button {
     height: auto;
     font-size: 20px;
     width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rechercher {
+    display: none;
+  }
+
+  .rechercherlogo {
+    display: flex;
   }
 
   .infotxt {
@@ -668,7 +696,6 @@ footer a {
   }
 
   .nav1 a:hover {
-    border-bottom: #0065fc 2px solid;
     padding-bottom: 15px;
     padding-left: 25%;
     padding-right: 25%;
@@ -676,13 +703,11 @@ footer a {
 
   .nav2 {
     order: 3;
-
     width: 50%;
     text-align: center;
   }
 
   .nav2 a:hover {
-    border-bottom: #0065fc 2px solid;
     padding-bottom: 15px;
     padding-left: 25%;
     padding-right: 25%;
@@ -719,12 +744,12 @@ footer a {
   }
   /*MAIN*/
 
-  .srchicon {
-    display: block;
+  .rechercher {
+    display: none;
   }
 
-  .rechercherbut {
-    display: none;
+  .rechercherlogo {
+    display: flex;
   }
 
   /*FILTRES ET BOUTONS*/
@@ -752,7 +777,7 @@ footer a {
     height: 30px;
   }
 
-  form button {
+  form .button {
     border-top-left-radius: 14px;
     border-bottom-left-radius: 14px;
   }
@@ -831,14 +856,18 @@ footer a {
 
   /*MAIN*/
 
-  /*FILTRES ET BOUTONS*/
-
   ::placeholder {
     font-size: 15px;
   }
 
   .barretxt form {
     width: 80%;
+  }
+
+  /*FILTRES ET BOUTONS*/
+
+  .filtre_bouton {
+    height: 20%;
   }
 
   /*HÉBERGEMENTS A MARSEILLE*/
@@ -852,11 +881,11 @@ footer a {
 
   .pluspop {
     width: auto;
-    height: auto;
+    height: 1000px;
   }
 
   .annoncepopu {
-    width: auto;
+    width: 90%;
     height: 200px;
   }
 
